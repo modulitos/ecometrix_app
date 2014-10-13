@@ -1,0 +1,268 @@
+/* Twitter */
+.ttrEssence {
+    background: #47B5D3
+}
+.ttrContent {
+    line-height: 128px;
+    padding-right: 15px;
+}
+.ttext {
+    text-align: right;
+    color: white;
+}
+/* Questions */
+
+.qEssence {
+    background: #1C9632;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+}
+.initQ {
+    line-height: 128px;
+}
+/*.openQ { line-height: 256px; }*/
+
+.openQ {
+    line-height: 128px;
+}
+.closedQ {
+    line-height: 256px;
+    background: lightBlue;
+}
+.buttony {
+    line-height: 35px;
+    float: right;
+    padding-bottom: 5px;
+    color: black;/* non-Bootstrap support */
+}
+.motivation {
+    height: 128px;
+    background: darkGreen;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    padding-top: 30px;
+}
+.btn {
+    background: lightGreen;
+}
+.btn:hover {
+    background: lightGreen;
+    color: black; /*non-Bootstrap support */
+}
+/* Ecoblocks */
+
+.ecoblocks {
+    background: #777;
+    width: 100%;
+    padding-left: 15em;
+    padding-right: 15em;
+}
+/* Begin: remove responsive gutter */
+.container {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4em;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .2em;
+}
+/* End: remove responsive gutter */
+
+/* Begin login specific css */
+form-all{
+    background:#f0f0f0;
+    padding:6% 4%;
+}
+input[type="text"],input[type="password"]{
+    /*input-all{*/
+    /*width:92%;*/
+    height:100%;
+    /*background:#fff;*/
+    /*margin-bottom:4%;*/
+    border:1px solid #ccc;
+    /*padding:4%;*/
+    /*font-family:'Open Sans',sans-serif;*/
+    /*font-size:95%;*/
+    /*color:#555;*/
+}
+#login, #addUser{
+    width:400px;
+    margin:0 auto;
+    margin-top:8px;
+    margin-bottom:2%;
+    transition:opacity 1s;
+    /*-webkit-transition:opacity 1s;*/
+}
+/* End login specific css */
+
+/* Header */
+
+.ecoheader {
+    background-image: url('../img/ecometrixheader.jpg');
+    /*background-repeat: none;*/
+    line-height: 51px;
+    width: 320px;
+}
+.ecobackground {
+    background-color: #3a3a3c;
+}
+/* Custom Score Chart */
+
+.score {
+    /*background-color: #333;*/
+}
+.score .label {
+    float: right;
+}
+.score .friend {
+    font: 10px sans-serif;
+    background-color: #5AB516;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+}
+/*.score .foe {*/
+/*font: 10px sans-serif;*/
+/*background-color: #bd8a00;*/
+/*background-color: #5AB516;*/
+/*text-align: right;*/
+/*padding: 3px;*/
+/*margin: 1px;*/
+/*color: white;*/
+/*}*/
+.scorebox {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+/* sticky styles */
+
+.tack {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+/* Creates space between header and questions */
+.tackFollow {
+    /*margin: 90px; */ /*used with questions scorebar */
+    margin: 70px;
+}
+/* override responsive design where this scales for small displays */
+
+.navbar-fixed-bottom {
+    position: fixed;
+}
+/*Align buttons */
+.center-pills {
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+}
+.nav ul li a:hover, .nav ul li a:active {
+    /*// Background color of hovered link*/
+    background-color:#333333;
+
+    color:#6699CC;
+}
+
+/* Cross-browser compatibility */
+html, body {
+  height: 100%;
+}
+
+/*@-ms-viewport{*/
+    /*width: device-width;*/
+    /*position: device-fixed;*/
+/*}*/
+@-webkit-viewport   { width: 620; }
+@-moz-viewport      { width: 620; }
+@-ms-viewport       { width: 620; }
+@-o-viewport        { width: 620; }
+@viewport           { width: 620; }
+
+/* For small screens*/
+@media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+    /* Styles for small screen*/
+    .econav {
+        padding-left: 21%;
+    }
+    body{
+        /*zoom: 125%;*/
+        zoom: 90%;
+    }
+
+}
+/* For large screens*/
+/* Affects Chromium browser (not Firefox) */
+@media only screen and (min-device-width: 768px) {
+    /* Styles for larger screen */
+    .econav {
+        padding-left: 30px;
+    }
+    body{
+        /*zoom: 150%;*/
+        zoom: 125%;
+    }
+}
+.econav .leftpill {
+    /* override with icons */
+}
+.econav .midpill {
+    /* override with icons */
+}
+.econav .rightpill {
+    /* override with icons */
+}
+.econav .far-rightpill {
+    /* override with icons */
+}
+/* enable this when footer is enabled */
+
+/*
+Gradient Spec:
+- Brown (153, 103, 50) on left. - Green (123, 189, 50) 
+
+See the following to regenerate gradient style:
+http://www.colorzilla.com/gradient-editor/
+
+*/
+
+.finalscore {
+    /* BRIAN or Cut+Paste Style BELOW */
+    /* removing gradient here. My plan was just to have the gradient on the score page and only for the bar comparing how green you are compared to others. background: #966732; */
+    /* Old browsers */
+    /* background: -moz-linear-gradient(left, #966732 0%, #78b732 100%); */
+    /* FF3.6+ */
+    /*
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#966732), color-stop(100%,#78b732)); */
+    /* Chrome,Safari4+ */
+    /*
+background: -webkit-linear-gradient(left, #966732 0%,#78b732 100%); */
+    /* Chrome10+,Safari5.1+ */
+    /*
+  background: -o-linear-gradient(left, #966732 0%,#78b732 100%); 
+  */
+    /* Opera 11.10+ */
+    /*
+  background: -ms-linear-gradient(left, #966732 0%,#78b732 100%); */
+    /* IE10+ */
+    /*
+  background: linear-gradient(to right, #966732 0%,#78b732 100%); */
+    /* W3C */
+    /*
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#966732', endColorstr='#78b732',GradientType=1 );
+  */
+    /* IE6-9 */
+    /* BRIAN or Cut+Paste Style ABOVE */
+}
